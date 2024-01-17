@@ -35,6 +35,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -104,6 +105,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
@@ -134,6 +136,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+  "/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
@@ -160,6 +163,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -229,6 +233,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -250,6 +255,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -319,6 +325,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 
 # Targets to which this target links.

@@ -1066,6 +1066,33 @@ home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
+home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+
+home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
 home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj
@@ -1427,6 +1454,9 @@ help:
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.s"

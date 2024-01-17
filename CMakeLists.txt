@@ -9,4 +9,4 @@ add_executable(pico-tail-controller
 )
 
 pico_add_extra_outputs(pico-tail-controller)
-target_link_libraries(pico-tail-controller pico_stdlib hardware_spi hardware_gpio hardware_adc hardware_pwm hardware_uart)
+target_link_libraries(pico-tail-controller pico_stdlib hardware_spi hardware_gpio hardware_adc hardware_pwm hardware_uart pico_multicore)
