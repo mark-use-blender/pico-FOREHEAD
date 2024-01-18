@@ -1,3 +1,5 @@
+//openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program pico-tail-controller.elf verify reset exit"
+
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,12 +13,16 @@
 #include "hardware/pwm.h"
 #include "hardware/uart.h"
 
-#define BUF_LEN 3
+#define BUF_LEN 4
 #define SBUF_LEN 1
 uint8_t in_buf0[BUF_LEN];
 uint8_t chin_buf0[BUF_LEN];
 uint8_t sin_buf0[SBUF_LEN];
-uint8_t ddid;
+char ddidh;
+char ddidl;
+uint8_t ddid[2];
+uint8_t in_bufid[2];
+
 //ddid[0] = '0';
 uint16_t adcinr0;
 uint16_t adcinr1;
@@ -43,6 +49,7 @@ char* sresult;
 //uint16_t result = adc_read();
 char int_str[50];
 float fresult;
+bool in_ok;
 
 
 
@@ -122,7 +129,7 @@ void core1(){
         
         
         gpio_put(11,0);
-        
+        sleep_ms(10);
         
     }
 
@@ -134,10 +141,14 @@ void main() {
     //gpio_init(2);
     gpio_init(3);
     gpio_init(13);
+    gpio_init(18);
+    gpio_init(19);
     adc_init();
     adc_gpio_init(26);
     adc_gpio_init(27);
     gpio_set_dir(11,1);
+    gpio_set_dir(18,1);
+    gpio_set_dir(19,0);
     gpio_set_function(16, 4);
     pwm_set_wrap(0, 100);
     pwm_set_chan_level(0, PWM_CHAN_A, 0);
@@ -157,10 +168,11 @@ void main() {
     gpio_put(3,0);
     gpio_put(13,1);
     gpio_put(11,1);
+    gpio_put(18,0);
     //stdio_usb_init();	
 
 
-    
+     
     while(false){
         gpio_put(11,1);
         gpio_put(2,1);
@@ -182,22 +194,41 @@ void main() {
     //uint8_t did[SBUF_LEN];
     // Enable SPI 
     stdio_init_all();
-    spi_init(spi0, 1000 * 1000);
-    spi_set_slave(spi0, true);
+    
+    //spi_init(spi0, 1000 * 1000);
+    //spi_set_slave(spi0, true);
+    /*
     gpio_set_function(20, 1);
     gpio_set_function(21, 1);
     gpio_set_function(22, 1);
     gpio_set_function(23, 1);
+    */
     // Make the SPI pins available to picotool
-    bi_decl(bi_4pins_with_func(20, 23, 22, 21, 1));
+    //bi_decl(bi_4pins_with_func(20, 23, 22, 21, 1));
+    in_ok = gpio_get(19);
+    while (in_ok==0){
+        in_ok = gpio_get(19);
+    }
 
 
     // init uart
-    // Enable UART for debug
-    uart_init (uart0,38400);
-    gpio_set_function(0, 2);
-    gpio_set_function(1, 2);
+    // Enable UART for comunicating
+    uart_init (uart1,38400);
+    gpio_set_function(20, 2);
+    gpio_set_function(21, 2);
     sleep_ms(10);
+    while(uart_is_enabled(uart1)){
+        if (uart_is_readable(uart1)){
+            uart_read_blocking(uart1,ddid,2);
+            break;
+        }
+
+    }
+    uart_puts(uart1,"ok");
+    gpio_put(18,1);
+    
+
+
     
     /*
     while(false){
@@ -232,9 +263,9 @@ void main() {
     msdel = (in_buf0[1] & 0x3f) << 8;
     msdel = msdel + in_buf0[2];
     cmdel = msdel;
-    sprintf (scmdel,"%d", cmdel);
-    uart_puts (uart0,scmdel);
-    uart_puts (uart0,"\nd:");
+    //sprintf (scmdel,"%d", cmdel);
+    //uart_puts (uart0,scmdel);
+    //uart_puts (uart0,"\nd:");
     sleep_ms(500);
     }
     
@@ -270,7 +301,43 @@ void main() {
         //          ok analogue in    using adc
         //          soft e stop
         //          
-        
+        if(true){
+            if (uart_is_readable(uart1)){
+                uart_read_blocking(uart1,in_buf0,BUF_LEN);
+                in_bufid[0]=in_buf0[0];
+                in_bufid[1]=in_buf0[1]
+                if (in_bufid == ddid){
+                    cmaxi = (in_buf0[2] >> 7) & 0x1;
+                    cmdir = (in_buf0[2] >> 6) & 0x1;
+                    msdel = (in_buf0[2] & 0x3f) << 8;
+                    msdel |= in_buf0[3];
+                    if (cmaxi){
+                        if (cmdir){
+                            tarpos0 = (int)msdel;
+                        }
+                        else{
+                            tarpos0 = ((int)msdel)* -1 ;
+                        }
+                    }
+                    
+                    else{
+                        if (cmdir){
+                            tarpos1 = (int)msdel;
+                        }
+                        else{
+                            tarpos1 = ((int)msdel)* -1 ;
+                        }
+                    }
+                    /*
+                    cmdel = msdel;
+                    sprintf (scmdel,"%d", cmdel);
+                    uart_puts (uart0,scmdel);
+                    uart_puts (uart0,"\nd:");
+                    */
+                }
+            }
+
+        }
         
         if (false){
             if (spi_is_readable(spi0)){
@@ -311,7 +378,7 @@ void main() {
         
         
         
-        if(true){
+        if(false){
             if (uart_is_enabled(uart0)){
                 if (uart_is_writable(uart0)){
                     sprintf (sresult,"ad0:%d  ad1:%d  ta0:%d  ta1:%d  cp0:%d  cp1:%d  tp0:%d  tp1:%d \n",adcinr0 , adcinr1 , temadcinr0 , temadcinr1 , curpos0 ,curpos1,tarpos0,tarpos1);
