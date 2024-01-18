@@ -97,7 +97,7 @@ void core1(){
         else if (difpos1>10){
             pwm_set_gpio_level(26, (uint16_t)fmin(100,((difpos1/2)-5)));
             gpio_put(27,0);
-            sleep_ms(0.5;)
+            sleep_ms(0.5);
             pwm_set_gpio_level(26, 0);
             gpio_put(27,0);
         }
@@ -166,7 +166,7 @@ void main() {
             if (uart_is_readable(uart1)){
                 uart_read_blocking(uart1,in_buf0,BUF_LEN);
                 in_bufid[0]=in_buf0[0];
-                in_bufid[1]=in_buf0[1]
+                in_bufid[1]=in_buf0[1];
                 if (in_bufid == ddid){
                     cmaxi = (in_buf0[2] >> 7) & 0x1;
                     cmdir = (in_buf0[2] >> 6) & 0x1;
@@ -191,33 +191,6 @@ void main() {
                 }
                 if (in_bufid == 0){
                     goto INIT;
-                }
-            }
-        }
-        if (false){
-            if (spi_is_readable(spi0)){
-                spi_read_blocking(spi0,0x00,in_buf0,BUF_LEN);
-                if (in_buf0[0] == ddid){
-                    cmaxi = (in_buf0[1] >> 7) & 0x1;
-                    cmdir = (in_buf0[1] >> 6) & 0x1;
-                    msdel = (in_buf0[1] & 0x3f) << 8;
-                    msdel |= in_buf0[2];
-                    if (cmaxi){
-                        if (cmdir){
-                            tarpos0 = (int)msdel;
-                        }
-                        else{
-                            tarpos0 = ((int)msdel)* -1 ;
-                        }
-                    }
-                    else{
-                        if (cmdir){
-                            tarpos1 = (int)msdel;
-                        }
-                        else{
-                            tarpos1 = ((int)msdel)* -1 ;
-                        }
-                    }
                 }
             }
         }
