@@ -27,12 +27,12 @@ uint16_t temadcinr0;
 uint16_t temadcinr1;
 uint16_t delta0;
 uint16_t delta1;
-int curpos0 =0;
-int curpos1 =0;
-int tarpos0 =0;
-int tarpos1 =0;
-int difpos0 =0;
-int difpos1 =0;
+int curpos0 = 0;
+int curpos1 = 0;
+int tarpos0 = 0;
+int tarpos1 = 0;
+int difpos0 = 0;
+int difpos1 = 0;
 uint8_t cmid;
 uint16_t msdel;
 bool cmdir;
@@ -52,10 +52,10 @@ int posdiff(int st,int nd ){
     bool pos = 0 < delta;
     if (big){
         if (pos){
-            delta = -4096+delta;
+            delta = -4096 + delta;
         }
         else{
-            delta = 4096+delta;
+            delta = 4096 + delta;
         }
     }
     return delta;
@@ -66,16 +66,16 @@ void core1(){
         temadcinr0 = adc_read();
         curpos0 = curpos0+posdiff(adcinr0,temadcinr0);
         adcinr0 = temadcinr0;
-        difpos0 =tarpos0-curpos0;
+        difpos0 = tarpos0 - curpos0;
         if (difpos0<-10){
-            pwm_set_gpio_level(2, (uint16_t)fmax(0,(105+(difpos0/2))));
+            pwm_set_gpio_level(2, (uint16_t)fmax(0,(105 + (difpos0 / 2) )));
             gpio_put(3,1);
             sleep_ms(1);
             pwm_set_gpio_level(2, 0);
             gpio_put(3,0);
         }
         else if (difpos0>10){
-            pwm_set_gpio_level(2, (uint16_t)fmin(100,((difpos0/2)-5)));
+            pwm_set_gpio_level(2, (uint16_t)fmin(100,( (difpos0 / 2) - 5)));
             gpio_put(3,0);
             sleep_ms(1);
             pwm_set_gpio_level(2, 0);
@@ -84,18 +84,18 @@ void core1(){
         gpio_put(11,1);
         adc_select_input(1);
         temadcinr1 = adc_read();
-        curpos1 = curpos1+posdiff(adcinr1,temadcinr1);
+        curpos1 = curpos1 + posdiff(adcinr1,temadcinr1);
         adcinr1 = temadcinr1;
-        difpos1 =tarpos1-curpos1;
-        if (difpos1<-10){
-            pwm_set_gpio_level(26, (uint16_t)fmax(0,(105+(difpos1/2))));
+        difpos1 = tarpos1 - curpos1;
+        if (difpos1 < -10){
+            pwm_set_gpio_level(26, (uint16_t)fmax(0,(105 + (difpos1 / 2) )));
             gpio_put(27,1);
             sleep_ms(0.5);
             pwm_set_gpio_level(26, 0);
             gpio_put(27,0);
         }
         else if (difpos1>10){
-            pwm_set_gpio_level(26, (uint16_t)fmin(100,((difpos1/2)-5)));
+            pwm_set_gpio_level(26, (uint16_t)fmin(100,( (difpos1 / 2) - 5)));
             gpio_put(27,0);
             sleep_ms(0.5);
             pwm_set_gpio_level(26, 0);
@@ -137,7 +137,7 @@ void main() {
     gpio_put(18,0);
     stdio_init_all();
     in_ok = gpio_get(19);
-    while (in_ok==0){
+    while (in_ok == 0){
         in_ok = gpio_get(19);
     }
     // init uart
@@ -165,8 +165,8 @@ void main() {
         if(true){
             if (uart_is_readable(uart1)){
                 uart_read_blocking(uart1,in_buf0,BUF_LEN);
-                in_bufid[0]=in_buf0[0];
-                in_bufid[1]=in_buf0[1];
+                in_bufid[0] = in_buf0[0];
+                in_bufid[1] = in_buf0[1];
                 if (in_bufid == ddid){
                     cmaxi = (in_buf0[2] >> 7) & 0x1;
                     cmdir = (in_buf0[2] >> 6) & 0x1;
@@ -177,7 +177,7 @@ void main() {
                             tarpos0 = (int)msdel;
                         }
                         else{
-                            tarpos0 = ((int)msdel)* -1 ;
+                            tarpos0 = ((int)msdel) * -1 ;
                         }
                     }
                     else{
@@ -185,7 +185,7 @@ void main() {
                             tarpos1 = (int)msdel;
                         }
                         else{
-                            tarpos1 = ((int)msdel)* -1 ;
+                            tarpos1 = ((int)msdel) * -1 ;
                         }
                     }
                 }
