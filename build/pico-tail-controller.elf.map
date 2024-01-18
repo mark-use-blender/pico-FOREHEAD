@@ -1234,9 +1234,9 @@ Discarded input sections
                 0x00000000       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .rodata.multicore_lockout_end_block_until.str1.4
                 0x00000000       0x3c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text          0x00000000        0x0 /tmp/ccyByCw9.o
- .data          0x00000000        0x0 /tmp/ccyByCw9.o
- .bss           0x00000000        0x0 /tmp/ccyByCw9.o
+ .text          0x00000000        0x0 /tmp/ccTWxILe.o
+ .data          0x00000000        0x0 /tmp/ccTWxILe.o
+ .bss           0x00000000        0x0 /tmp/ccTWxILe.o
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
@@ -1506,7 +1506,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/ccyByCw9.o
+ .boot2         0x10000000      0x100 /tmp/ccTWxILe.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2576,7 +2576,7 @@ LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pi
 LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-LOAD /tmp/ccyByCw9.o
+LOAD /tmp/ccTWxILe.o
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2675,7 +2675,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000061c       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .ARM.attributes
-                0x00000648       0x22 /tmp/ccyByCw9.o
+                0x00000648       0x22 /tmp/ccTWxILe.o
  .ARM.attributes
                 0x0000066a       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
  .ARM.attributes
