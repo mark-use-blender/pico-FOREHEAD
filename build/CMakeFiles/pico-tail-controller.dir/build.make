@@ -586,22 +586,9 @@ CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_st
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/pico-tail-controller.dir/flags.make
-CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/project/pico-tail-controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
-
-CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-
-CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-
 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/pico-tail-controller.dir/flags.make
 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/project/pico-tail-controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/project/pico-tail-controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
 
 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
@@ -611,6 +598,19 @@ CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardwar
 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+
+CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/pico-tail-controller.dir/flags.make
+CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/project/pico-tail-controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+
+CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/pico-tail-controller.dir/flags.make
 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
@@ -673,8 +673,8 @@ pico__tail__controller_OBJECTS = \
 "CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
 "CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" \
 "CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" \
+"CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" \
 "CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 
 # External object files for target pico-tail-controller
@@ -726,8 +726,8 @@ pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-
 pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 pico-tail-controller.elf: CMakeFiles/pico-tail-controller.dir/build.make
 pico-tail-controller.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S

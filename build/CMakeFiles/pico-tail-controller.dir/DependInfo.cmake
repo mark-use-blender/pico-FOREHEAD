@@ -102,9 +102,9 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/boot_stage2/include"
-  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
@@ -120,10 +120,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
-  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c" "/home/pi/project/pico-tail-controller/build/CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
@@ -230,9 +230,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/boot_stage2/include"
-  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
@@ -322,9 +322,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/boot_stage2/include"
-  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+  "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/include"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/include"
   )
 

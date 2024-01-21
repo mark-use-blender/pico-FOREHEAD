@@ -472,6 +472,28 @@ CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardwar
  /home/pi/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
+CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ /home/pi/pico/pico-sdk/src/boards/include/boards/pico.h
+ /home/pi/pico/pico-sdk/src/common/pico_base/include/pico.h
+ /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
+ /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/config.h
+ /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/error.h
+ /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/types.h
+ /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+ /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+ /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h
+ /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+ /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h
+ /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h
+ /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h
+ /home/pi/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
+ /home/pi/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+ /home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+ /home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h
+ /home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h
+ /home/pi/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+ generated/pico_base/pico/config_autogen.h
+ generated/pico_base/pico/version.h
 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  /home/pi/pico/pico-sdk/src/boards/include/boards/pico.h
  /home/pi/pico/pico-sdk/src/common/pico_base/include/pico.h
@@ -553,32 +575,6 @@ CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardwar
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h
- /home/pi/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
- generated/pico_base/pico/config_autogen.h
- generated/pico_base/pico/version.h
-CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- /home/pi/pico/pico-sdk/src/boards/include/boards/pico.h
- /home/pi/pico/pico-sdk/src/common/pico_base/include/pico.h
- /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
- /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/config.h
- /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/error.h
- /home/pi/pico/pico-sdk/src/common/pico_base/include/pico/types.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
- /home/pi/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
- /home/pi/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
- /home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h
- /home/pi/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h
- /home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
- /home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
  /home/pi/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
  generated/pico_base/pico/config_autogen.h
  generated/pico_base/pico/version.h
@@ -1094,7 +1090,6 @@ CMakeFiles/pico-tail-controller.dir/main.c.obj
  /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h
@@ -1103,7 +1098,6 @@ CMakeFiles/pico-tail-controller.dir/main.c.obj
  /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
- /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
  /home/pi/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
  /home/pi/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h
@@ -1112,7 +1106,6 @@ CMakeFiles/pico-tail-controller.dir/main.c.obj
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h
- /home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
  /home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h

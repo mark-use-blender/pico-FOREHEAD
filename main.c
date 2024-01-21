@@ -8,11 +8,24 @@ openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program pico-t
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
 #include "pico/multicore.h"
-#include "hardware/spi.h"
 #include "hardware/gpio.h"
 #include "hardware/adc.h"
 #include "hardware/pwm.h"
 #include "hardware/uart.h"
+
+#define ONB_UART_TX 20
+#define ONB_UART_RX 21
+#define ONB_LED_0 11
+#define ONB_LED_1 13
+#define ONB_ADC_0 27
+#define ONB_ADC_1 26
+#define ONB_DO_0 3
+#define ONB_DO_1 17
+#define ONB_PWM_0 2
+#define ONB_PWM_1 16
+#define ONB_SIG_IN 23
+#define ONB_SIG_OT 22
+
 
 #define BUF_LEN 4
 #define SBUF_LEN 1
@@ -68,83 +81,83 @@ void core1(){
         adcinr0 = temadcinr0;
         difpos0 = tarpos0 - curpos0;
         if (difpos0 < -10){
-            pwm_set_gpio_level(2, (uint16_t)fmax(0, (105 + (difpos0 / 2) )));
-            gpio_put(3, 1);
+            pwm_set_gpio_level(ONB_PWM_0, (uint16_t)fmax(0, (105 + (difpos0 / 2) )));
+            gpio_put(ONB_DO_0, 1);
             sleep_ms(1);
-            pwm_set_gpio_level(2, 0);
-            gpio_put(3, 0);
+            pwm_set_gpio_level(ONB_PWM_0, 0);
+            gpio_put(ONB_DO_0, 0);
         }
         else if (difpos0 > 10){
-            pwm_set_gpio_level(2, (uint16_t)fmin(100, ( (difpos0 / 2) - 5)));
-            gpio_put(3, 0);
+            pwm_set_gpio_level(ONB_PWM_0, (uint16_t)fmin(100, ( (difpos0 / 2) - 5)));
+            gpio_put(ONB_DO_0, 0);
             sleep_ms(1);
-            pwm_set_gpio_level(2, 0);
-            gpio_put(3, 0);
+            pwm_set_gpio_level(ONB_PWM_0, 0);
+            gpio_put(ONB_DO_0, 0);
         }
-        gpio_put(11, 1);
+        gpio_put(ONB_LED_0, 1);
         adc_select_input(1);
         temadcinr1 = adc_read();
         curpos1 = curpos1 + posdiff(adcinr1, temadcinr1);
         adcinr1 = temadcinr1;
         difpos1 = tarpos1 - curpos1;
         if (difpos1 < -10){
-            pwm_set_gpio_level(26, (uint16_t)fmax(0, (105 + (difpos1 / 2) )));
-            gpio_put(27, 1);
-            sleep_ms(0.5);
-            pwm_set_gpio_level(26, 0);
-            gpio_put(27, 0);
+            pwm_set_gpio_level(ONB_PWM_1, (uint16_t)fmax(0, (105 + (difpos1 / 2) )));
+            gpio_put(ONB_DO_1, 1);
+            sleep_ms(1);
+            pwm_set_gpio_level(ONB_PWM_1, 0);
+            gpio_put(ONB_DO_1, 0);
         }
         else if (difpos1>10){
-            pwm_set_gpio_level(26, (uint16_t)fmin(100, ( (difpos1 / 2) - 5)));
-            gpio_put(27, 0);
-            sleep_ms(0.5);
-            pwm_set_gpio_level(26, 0);
-            gpio_put(27, 0);
+            pwm_set_gpio_level(ONB_PWM_1, (uint16_t)fmin(100, ( (difpos1 / 2) - 5)));
+            gpio_put(ONB_DO_1, 0);
+            sleep_ms(1);
+            pwm_set_gpio_level(ONB_PWM_1, 0);
+            gpio_put(ONB_DO_1, 0);
         }
-        gpio_put(11, 0);
+        gpio_put(ONB_LED_0, 0);
         sleep_ms(10);
     }
 }
 void main() {
     INIT:
-    gpio_init(11);
-    gpio_init(17);
-    gpio_init(3);
-    gpio_init(13);
-    gpio_init(18);
-    gpio_init(19);
+    gpio_init(ONB_LED_0);
+    gpio_init(ONB_DO_1);
+    gpio_init(ONB_DO_0);
+    gpio_init(ONB_LED_1);
+    gpio_init(ONB_SIG_OT);
+    gpio_init(ONB_SIG_IN);
     adc_init();
-    adc_gpio_init(26);
-    adc_gpio_init(27);
-    gpio_set_dir(11, 1);
-    gpio_set_dir(18, 1);
-    gpio_set_dir(19, 0);
-    gpio_set_function(16, 4);
+    adc_gpio_init(ONB_ADC_1);
+    adc_gpio_init(ONB_ADC_0);
+    gpio_set_dir(ONB_LED_0, 1);
+    gpio_set_dir(ONB_SIG_OT, 1);
+    gpio_set_dir(ONB_SIG_IN, 0);
+    gpio_set_function(ONB_PWM_1, 4);
     pwm_set_wrap(0, 100);
     pwm_set_chan_level(0, PWM_CHAN_A, 0);
     pwm_set_enabled(0, true);
-    gpio_set_dir(17, 1);
-    gpio_set_function(2, 4);
+    gpio_set_dir(ONB_DO_1, 1);
+    gpio_set_function(ONB_PWM_0, 4);
     pwm_set_wrap(1, 100);
     pwm_set_chan_level(1, PWM_CHAN_A, 0);
     pwm_set_enabled(1, true);
-    gpio_set_dir(3, 1);
-    gpio_set_dir(13, 1);
-    gpio_put(17, 0);
-    gpio_put(3, 0);
-    gpio_put(13, 1);
-    gpio_put(11, 1);
-    gpio_put(18, 0);
+    gpio_set_dir(ONB_DO_0, 1);
+    gpio_set_dir(ONB_LED_1, 1);
+    gpio_put(ONB_DO_1, 0);
+    gpio_put(ONB_DO_0, 0);
+    gpio_put(ONB_LED_1, 1);
+    gpio_put(ONB_LED_0, 1);
+    gpio_put(ONB_SIG_OT, 0);
     stdio_init_all();
-    in_ok = gpio_get(19);
+    in_ok = gpio_get(ONB_SIG_IN);
     while (in_ok == 0){
-        in_ok = gpio_get(19);
+        in_ok = gpio_get(ONB_SIG_IN);
     }
     // init uart
     // Enable UART for comunicating
     uart_init(uart1, 38400);
-    gpio_set_function(20, 2);
-    gpio_set_function(21, 2);
+    gpio_set_function(ONB_UART_TX, 2);
+    gpio_set_function(ONB_UART_RX, 2);
     sleep_ms(10);
     while(uart_is_enabled(uart1)){
         if (uart_is_readable(uart1)){
@@ -153,13 +166,13 @@ void main() {
         }
     }
     uart_puts(uart1, "ok");
-    gpio_put(18, 1);
+    gpio_put(ONB_SIG_OT, 1);
     adc_select_input(0);
     adcinr0 = adc_read();
     adc_select_input(1);
     adcinr1 = adc_read();
-    gpio_put(11, 0);
-    gpio_put(13, 0);
+    gpio_put(ONB_LED_0, 0);
+    gpio_put(ONB_LED_1, 0);
     multicore_launch_core1(core1);
     while(true){ 
         if(true){
@@ -190,6 +203,7 @@ void main() {
                     }
                 }
                 if (in_bufid == 0){
+                    multicore_reset_core1();
                     goto INIT;
                 }
             }

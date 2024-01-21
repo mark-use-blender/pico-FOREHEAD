@@ -426,15 +426,15 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
-				},
-				{
-					"backtrace" : 2,
 					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
 				},
 				{
 					"backtrace" : 2,
 					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/include"
 				},
 				{
 					"backtrace" : 2,
@@ -809,15 +809,15 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
-				},
-				{
-					"backtrace" : 2,
 					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
 				},
 				{
 					"backtrace" : 2,
 					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/include"
 				},
 				{
 					"backtrace" : 2,
@@ -1185,15 +1185,15 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/include"
-				},
-				{
-					"backtrace" : 2,
 					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
 				},
 				{
 					"backtrace" : 2,
 					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/include"
 				},
 				{
 					"backtrace" : 2,
@@ -2405,13 +2405,13 @@
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c",
+			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c",
+			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c",
 			"sourceGroupIndex" : 0
 		},
 		{

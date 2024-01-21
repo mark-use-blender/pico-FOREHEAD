@@ -553,6 +553,33 @@ home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
+home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+
+home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
 home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
@@ -642,33 +669,6 @@ home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/pi/pico/pico-sdk/s
 home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-
-home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.obj: home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-
-.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.obj
-
-# target to build an object file
-home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-
-home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.i: home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-
-.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.i
-
-# target to preprocess a source file
-home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-
-home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.s: home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-
-.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.s
-
-# target to generate assembly for a file
-home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-tail-controller.dir/build.make CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
 home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
@@ -1397,6 +1397,9 @@ help:
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
@@ -1407,9 +1410,6 @@ help:
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
-	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.obj"
-	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.i"
-	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_spi/spi.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s"
