@@ -75,6 +75,7 @@ int posdiff(int st, int nd ){
 }
 void core1(){
     while(true){
+        gpio_put(ONB_LED_0, 0);
         adc_select_input(0);
         temadcinr0 = adc_read();
         curpos0 = curpos0 + posdiff(adcinr0, temadcinr0);
@@ -115,7 +116,7 @@ void core1(){
             gpio_put(ONB_DO_1, 0);
         }
         gpio_put(ONB_LED_0, 0);
-        sleep_ms(10);
+        //sleep_ms(1);
     }
 }
 void main() {
@@ -149,24 +150,26 @@ void main() {
     gpio_put(ONB_LED_0, 1);
     gpio_put(ONB_SIG_OT, 0);
     stdio_init_all();
-    in_ok = gpio_get(ONB_SIG_IN);
-    while (in_ok == 0){
+    if (false){
         in_ok = gpio_get(ONB_SIG_IN);
-    }
-    // init uart
-    // Enable UART for comunicating
-    uart_init(uart1, 38400);
-    gpio_set_function(ONB_UART_TX, 2);
-    gpio_set_function(ONB_UART_RX, 2);
-    sleep_ms(10);
-    while(uart_is_enabled(uart1)){
-        if (uart_is_readable(uart1)){
-            uart_read_blocking(uart1, ddid, 2);
-            break;
+        while (in_ok == 0){
+            in_ok = gpio_get(ONB_SIG_IN);
         }
+        // init uart
+        // Enable UART for comunicating
+        uart_init(uart1, 38400);
+        gpio_set_function(ONB_UART_TX, 2);
+        gpio_set_function(ONB_UART_RX, 2);
+        sleep_ms(10);
+        while(uart_is_enabled(uart1)){
+            if (uart_is_readable(uart1)){
+                uart_read_blocking(uart1, ddid, 2);
+                break;
+            }
+        }
+        uart_puts(uart1, "ok");
+        gpio_put(ONB_SIG_OT, 1);
     }
-    uart_puts(uart1, "ok");
-    gpio_put(ONB_SIG_OT, 1);
     adc_select_input(0);
     adcinr0 = adc_read();
     adc_select_input(1);
@@ -176,11 +179,13 @@ void main() {
     multicore_launch_core1(core1);
     while(true){ 
         if(true){
+            gpio_put(ONB_LED_1, 0);
             if (uart_is_readable(uart1)){
                 uart_read_blocking(uart1, in_buf0, BUF_LEN);
                 in_bufid[0] = in_buf0[0];
                 in_bufid[1] = in_buf0[1];
                 if (in_bufid == ddid){
+                    gpio_put(ONB_LED_1, 1);
                     cmaxi = (in_buf0[2] >> 7) & 0x1;
                     cmdir = (in_buf0[2] >> 6) & 0x1;
                     msdel = (in_buf0[2] & 0x3f) << 8;
