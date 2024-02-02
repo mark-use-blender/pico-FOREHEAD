@@ -20,9 +20,9 @@ openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program pico-t
 #define ONB_ADC_0 27
 #define ONB_ADC_1 26
 #define ONB_DO_0 3
-#define ONB_DO_1 17
+#define ONB_DO_1 16
 #define ONB_PWM_0 2
-#define ONB_PWM_1 16
+#define ONB_PWM_1 17
 #define ONB_SIG_IN 23
 #define ONB_SIG_OT 22
 
