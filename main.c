@@ -13,52 +13,54 @@ openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program pico-t
 #include "hardware/pwm.h"
 #include "hardware/uart.h"
 
-#define ONB_UART_TX 20
-#define ONB_UART_RX 21
-#define ONB_LED_0 11
-#define ONB_LED_1 13
-#define ONB_ADC_0 27
-#define ONB_ADC_1 26
-#define ONB_DO_0 3
-#define ONB_DO_1 16
-#define ONB_PWM_0 2
-#define ONB_PWM_1 17
-#define ONB_SIG_IN 23
-#define ONB_SIG_OT 22
+#define ONB_UART_TX 20 //uart tx pin
+#define ONB_UART_RX 21 //uart rx pin
+#define ONB_LED_0 11 //led pin
+#define ONB_LED_1 13 //led pin
+#define ONB_ADC_0 27 //adc0 pin
+#define ONB_ADC_1 26 //adc1 pin
+#define ONB_DO_0 3 //digital out pin0
+#define ONB_DO_1 16 //digital out pin1
+#define ONB_PWM_0 2 //pwm pin0
+#define ONB_PWM_1 17 //pwm pin1
+#define ONB_SIG_IN 23 //handshake signal in
+#define ONB_SIG_OT 22 //handshake signal out
 
 
-#define BUF_LEN 4
-#define SBUF_LEN 1
-uint8_t in_buf0[BUF_LEN];
-uint8_t chin_buf0[BUF_LEN];
-uint8_t sin_buf0[SBUF_LEN];
-uint8_t ddid[2];
-uint8_t in_bufid[2];
-uint16_t adcinr0;
-uint16_t adcinr1;
-uint16_t temadcinr0;
-uint16_t temadcinr1;
-uint16_t delta0;
-uint16_t delta1;
-int curpos0 = 0;
-int curpos1 = 0;
-int tarpos0 = 0;
-int tarpos1 = 0;
-int difpos0 = 0;
-int difpos1 = 0;
-uint8_t cmid;
-uint16_t msdel;
-bool cmdir;
-bool cmaxi;
-int cmdel;
-char scmdel[13];
-char uin;
-int suin;
-char* sresult;
-char int_str[50];
-float fresult;
-bool in_ok;
+#define BUF_LEN 5
+#define SBUF_LEN 2
+uint8_t in_buf0[BUF_LEN]; //in buffer
+//uint8_t chin_buf0[BUF_LEN];
+//uint8_t sin_buf0[SBUF_LEN];
+uint8_t ddid[SBUF_LEN]; //device id
+uint8_t in_bufid[SBUF_LEN]; //uart in buffer 
+uint16_t adcinr0;//adc input 0
+uint16_t adcinr1;//adc input 1
+uint16_t temadcinr0;//temporay adc input 0
+uint16_t temadcinr1;//temporay adc input 1
+//uint16_t delta0;
+//uint16_t delta1;
+int curpos0 = 0;//current position 0
+int curpos1 = 0;//current position 1
+int tarpos0 = 0;//target position 0
+int tarpos1 = 0;//target position 1
+int difpos0 = 0;//difference between current and target position 0
+int difpos1 = 0;//difference between current and target position 1
+//uint8_t cmid;
+uint16_t msdel;//nudge ordered
+bool cmdir;//nudge direction
+bool cmaxi;//nudge axis
+//int cmdel;
+//char scmdel[13];
+//char uin;
+//int suin;
+//char* sresult;
+//char int_str[50];
+//float fresult;
+bool in_ok;//handshake start
 
+
+//angle wrapping
 int posdiff(int st, int nd ){
     int delta = nd - st;
     bool big = 2047 < abs(delta);
@@ -73,9 +75,11 @@ int posdiff(int st, int nd ){
     }
     return delta;
 }
+//second core on fast polling
 void core1(){
     while(true){
         gpio_put(ONB_LED_0, 0);
+        //work on first x axis
         adc_select_input(0);
         temadcinr0 = adc_read();
         curpos0 = curpos0 + posdiff(adcinr0, temadcinr0);
@@ -96,6 +100,7 @@ void core1(){
             gpio_put(ONB_DO_0, 0);
         }
         gpio_put(ONB_LED_0, 1);
+        //work on first y axis
         adc_select_input(1);
         temadcinr1 = adc_read();
         curpos1 = curpos1 + posdiff(adcinr1, temadcinr1);
@@ -150,13 +155,14 @@ void main() {
     gpio_put(ONB_LED_0, 1);
     gpio_put(ONB_SIG_OT, 0);
     stdio_init_all();
+    //hand shake
     if (false){
         in_ok = gpio_get(ONB_SIG_IN);
         while (in_ok == 0){
             in_ok = gpio_get(ONB_SIG_IN);
         }
         // init uart
-        // Enable UART for comunicating
+        // Enable UART for communicating
         uart_init(uart1, 38400);
         gpio_set_function(ONB_UART_TX, 2);
         gpio_set_function(ONB_UART_RX, 2);
@@ -188,8 +194,9 @@ void main() {
                     gpio_put(ONB_LED_1, 1);
                     cmaxi = (in_buf0[2] >> 7) & 0x1;
                     cmdir = (in_buf0[2] >> 6) & 0x1;
-                    msdel = (in_buf0[2] & 0x3f) << 8;
-                    msdel |= in_buf0[3];
+                    msdel = (in_buf0[2] & 0x3f) << 16;
+                    msdel |= in_buf0[3] << 8;
+                    msdel |= in_buf0[4];
                     if (cmaxi){
                         if (cmdir){
                             tarpos0 = (int)msdel;
