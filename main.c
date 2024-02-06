@@ -47,7 +47,7 @@ int tarpos1 = 0;//target position 1
 int difpos0 = 0;//difference between current and target position 0
 int difpos1 = 0;//difference between current and target position 1
 //uint8_t cmid;
-uint16_t msdel;//nudge ordered
+uint64_t msdel;//nudge ordered
 bool cmdir;//nudge direction
 bool cmaxi;//nudge axis
 //int cmdel;
@@ -121,7 +121,7 @@ void core1(){
             gpio_put(ONB_DO_1, 0);
         }
         gpio_put(ONB_LED_0, 0);
-        //sleep_ms(1);
+        //sleep_ms(5);
     }
 }
 void main() {
@@ -184,7 +184,7 @@ void main() {
     gpio_put(ONB_LED_1, 0);
     multicore_launch_core1(core1);
     while(true){ 
-        if(true){
+        if(false){
             gpio_put(ONB_LED_1, 0);
             if (uart_is_readable(uart1)){
                 uart_read_blocking(uart1, in_buf0, BUF_LEN);
@@ -219,6 +219,13 @@ void main() {
                     goto INIT;
                 }
             }
+        }
+        else
+        {
+            tarpos0 = 0;
+            sleep_ms(5000);
+            tarpos0 = 1024;
+            sleep_ms(5000);
         }
     }
 }

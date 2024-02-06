@@ -46,33 +46,21 @@ Archive member included to satisfy reference by file (symbol)
 Allocating common symbols
 Common symbol       size              file
 
-cmid                0x1               CMakeFiles/pico-tail-controller.dir/main.c.obj
-scmdel              0xd               CMakeFiles/pico-tail-controller.dir/main.c.obj
 sf_table            0x100             CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-delta1              0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
 cmaxi               0x1               CMakeFiles/pico-tail-controller.dir/main.c.obj
 temadcinr0          0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
 errno               0x4               /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-reent.o)
-sresult             0x4               CMakeFiles/pico-tail-controller.dir/main.c.obj
-in_buf0             0x4               CMakeFiles/pico-tail-controller.dir/main.c.obj
-cmdel               0x4               CMakeFiles/pico-tail-controller.dir/main.c.obj
-msdel               0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
+in_buf0             0x5               CMakeFiles/pico-tail-controller.dir/main.c.obj
+msdel               0x8               CMakeFiles/pico-tail-controller.dir/main.c.obj
 adcinr0             0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
 ddid                0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
 in_ok               0x1               CMakeFiles/pico-tail-controller.dir/main.c.obj
-sin_buf0            0x1               CMakeFiles/pico-tail-controller.dir/main.c.obj
 adcinr1             0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
-chin_buf0           0x4               CMakeFiles/pico-tail-controller.dir/main.c.obj
-delta0              0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
-fresult             0x4               CMakeFiles/pico-tail-controller.dir/main.c.obj
 sd_table            0x100             CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 uart_char_to_line_feed
                     0x4               CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 cmdir               0x1               CMakeFiles/pico-tail-controller.dir/main.c.obj
 temadcinr1          0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
-uin                 0x1               CMakeFiles/pico-tail-controller.dir/main.c.obj
-suin                0x4               CMakeFiles/pico-tail-controller.dir/main.c.obj
-int_str             0x32              CMakeFiles/pico-tail-controller.dir/main.c.obj
 in_bufid            0x2               CMakeFiles/pico-tail-controller.dir/main.c.obj
 
 Discarded input sections
@@ -1240,9 +1228,9 @@ Discarded input sections
                 0x00000000       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .rodata.multicore_lockout_end_block_until.str1.4
                 0x00000000       0x3c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text          0x00000000        0x0 /tmp/cccqIuKB.o
- .data          0x00000000        0x0 /tmp/cccqIuKB.o
- .bss           0x00000000        0x0 /tmp/cccqIuKB.o
+ .text          0x00000000        0x0 /tmp/ccX7IOsn.o
+ .data          0x00000000        0x0 /tmp/ccX7IOsn.o
+ .bss           0x00000000        0x0 /tmp/ccX7IOsn.o
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
@@ -1512,11 +1500,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/cccqIuKB.o
+ .boot2         0x10000000      0x100 /tmp/ccX7IOsn.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x4c08
+.text           0x10000100     0x4b68
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1584,442 +1572,441 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x10000374                posdiff
  .text.core1    0x100003a0      0x22c CMakeFiles/pico-tail-controller.dir/main.c.obj
                 0x100003a0                core1
- .text.main     0x100005cc      0x224 CMakeFiles/pico-tail-controller.dir/main.c.obj
+ .text.main     0x100005cc      0x188 CMakeFiles/pico-tail-controller.dir/main.c.obj
                 0x100005cc                main
  .text.gpio_set_function
-                0x100007f0       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100007f0                gpio_set_function
+                0x10000754       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000754                gpio_set_function
  .text.gpio_set_pulls
-                0x10000820       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000820                gpio_set_pulls
+                0x10000784       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000784                gpio_set_pulls
  .text.gpio_set_input_enabled
-                0x10000854       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000854                gpio_set_input_enabled
+                0x100007b8       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100007b8                gpio_set_input_enabled
  .text.gpio_init
-                0x10000884       0x16 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000884                gpio_init
- *fill*         0x1000089a        0x2 
+                0x100007e8       0x16 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100007e8                gpio_init
+ *fill*         0x100007fe        0x2 
  .text.running_on_fpga
-                0x1000089c       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x1000089c                running_on_fpga
+                0x10000800       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x10000800                running_on_fpga
  .text.hw_claim_lock
-                0x100008b0       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100008b0                hw_claim_lock
+                0x10000814       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000814                hw_claim_lock
  .text.hw_claim_unlock
-                0x100008c8       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100008c8                hw_claim_unlock
+                0x1000082c       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000082c                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x100008dc       0x32 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100008dc                hw_claim_or_assert
- *fill*         0x1000090e        0x2 
+                0x10000840       0x32 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000840                hw_claim_or_assert
+ *fill*         0x10000872        0x2 
  .text.spin_locks_reset
-                0x10000910       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000910                spin_locks_reset
+                0x10000874       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000874                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000930       0x1c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000930                next_striped_spin_lock_num
+                0x10000894       0x1c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000894                next_striped_spin_lock_num
  .text.set_raw_irq_handler_and_unlock
-                0x1000094c       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100008b0       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.make_branch
-                0x10000974       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100008d8       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.insert_branch_and_link
-                0x100009bc       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000920       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_is_enabled
-                0x100009fc       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100009fc                irq_is_enabled
+                0x10000960       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000960                irq_is_enabled
  .text.irq_set_mask_enabled
-                0x10000a14       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000a14                irq_set_mask_enabled
+                0x10000978       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000978                irq_set_mask_enabled
  .text.irq_set_enabled
-                0x10000a34        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000a34                irq_set_enabled
- *fill*         0x10000a42        0x2 
+                0x10000998        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000998                irq_set_enabled
+ *fill*         0x100009a6        0x2 
  .text.irq_get_vtable_handler
-                0x10000a44       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000a44                irq_get_vtable_handler
+                0x100009a8       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100009a8                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000a54       0x54 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000a54                irq_set_exclusive_handler
+                0x100009b8       0x54 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100009b8                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x10000aa8      0x1a4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000aa8                irq_remove_handler
+                0x10000a0c      0x1a4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000a0c                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x10000c4c       0xf0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000c4c                irq_add_tail_to_free_list
+                0x10000bb0       0xf0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000bb0                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10000d3c       0x1c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000d3c                irq_init_priorities
+                0x10000ca0       0x1c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ca0                irq_init_priorities
  .text.lock_init
-                0x10000d58       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10000d58                lock_init
+                0x10000cbc       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10000cbc                lock_init
  .text.mutex_init
-                0x10000d68       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000d68                mutex_init
+                0x10000ccc       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000ccc                mutex_init
  .text.recursive_mutex_init
-                0x10000d82       0x1e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000d82                recursive_mutex_init
+                0x10000ce6       0x1e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000ce6                recursive_mutex_init
  .text.sleep_until_callback
-                0x10000da0       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d04       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_post_alloc_init
-                0x10000dd0       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d34       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.timer_pool_entry_comparator
-                0x10000e10       0x7c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000e10                timer_pool_entry_comparator
+                0x10000d74       0x7c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d74                timer_pool_entry_comparator
  .text.ph_add_child_node
-                0x10000e8c       0xa4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000df0       0xa4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_merge_nodes
-                0x10000f30       0x3e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10000f6e        0x2 
+                0x10000e94       0x3e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10000ed2        0x2 
  .text.add_alarm_under_lock
-                0x10000f70      0x180 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000ed4      0x180 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x100010f0      0x33c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001054      0x33c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x1000142c       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000142c                alarm_pool_init_default
+                0x10001390       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001390                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x1000146c       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000146c                alarm_pool_get_default
+                0x100013d0       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100013d0                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x10001498      0x14c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001498                alarm_pool_add_alarm_at
+                0x100013fc      0x14c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100013fc                alarm_pool_add_alarm_at
  .text.alarm_pool_cancel_alarm
-                0x100015e4       0xf4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100015e4                alarm_pool_cancel_alarm
+                0x10001548       0xf4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001548                alarm_pool_cancel_alarm
  .text.sleep_until
-                0x100016d8       0xf8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100016d8                sleep_until
+                0x1000163c       0xf8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000163c                sleep_until
  .text.sleep_us
-                0x100017d0       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100017d0                sleep_us
+                0x10001734       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001734                sleep_us
  .text.sleep_ms
-                0x10001820       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001820                sleep_ms
+                0x10001784       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001784                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10001834       0xac CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001834                best_effort_wfe_or_timeout
+                0x10001798       0xac CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001798                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x100018e0       0x90 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001844       0x90 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001970       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001970                hardware_alarm_claim
+                0x100018d4       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100018d4                hardware_alarm_claim
  .text.time_us_64
-                0x10001988       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001988                time_us_64
+                0x100018ec       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100018ec                time_us_64
  .text.busy_wait_until
-                0x100019a0       0x24 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100019a0                busy_wait_until
+                0x10001904       0x24 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001904                busy_wait_until
  .text.busy_wait_us
-                0x100019c4       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100019c4                busy_wait_us
+                0x10001928       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001928                busy_wait_us
  .text.hardware_alarm_set_callback
-                0x10001a0c       0x90 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001a0c                hardware_alarm_set_callback
+                0x10001970       0x90 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001970                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10001a9c       0xe8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001a9c                hardware_alarm_set_target
+                0x10001a00       0xe8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001a00                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10001b84       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001b84                hardware_alarm_cancel
+                0x10001ae8       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001ae8                hardware_alarm_cancel
  .text.ph_add_child_node
-                0x10001bc4       0xa4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001b28       0xa4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_merge_nodes
-                0x10001c68       0x3e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10001ca6        0x2 
+                0x10001bcc       0x3e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10001c0a        0x2 
  .text.ph_clear
-                0x10001ca8       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001ca8                ph_clear
+                0x10001c0c       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001c0c                ph_clear
  .text.ph_post_alloc_init
-                0x10001d18        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001d18                ph_post_alloc_init
- *fill*         0x10001d26        0x2 
+                0x10001c7c        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001c7c                ph_post_alloc_init
+ *fill*         0x10001c8a        0x2 
  .text.ph_merge_two_pass
-                0x10001d28       0xac CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001d28                ph_merge_two_pass
+                0x10001c8c       0xac CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001c8c                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x10001dd4      0x128 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001d38      0x128 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x10001efc       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001efc                ph_remove_head
+                0x10001e60       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001e60                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001f10       0xf8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001f10                ph_remove_and_free_node
+                0x10001e74       0xf8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001e74                ph_remove_and_free_node
  .text.uart_disable_before_lcr_write
-                0x10002008       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001f6c       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_write_lcr_bits_masked
-                0x10002050       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- *fill*         0x10002072        0x2 
+                0x10001fb4       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ *fill*         0x10001fd6        0x2 
  .text.uart_set_baudrate
-                0x10002074       0x5c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10002074                uart_set_baudrate
+                0x10001fd8       0x5c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001fd8                uart_set_baudrate
  .text.uart_set_format
-                0x100020d0       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x100020d0                uart_set_format
+                0x10002034       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10002034                uart_set_format
  .text.uart_set_translate_crlf
-                0x100020fc       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x100020fc                uart_set_translate_crlf
+                0x10002060       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10002060                uart_set_translate_crlf
  .text.uart_init
-                0x10002124       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10002124                uart_init
+                0x10002088       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10002088                uart_init
  .text.clock_configure
-                0x100021a4      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x100021a4                clock_configure
+                0x10002108      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002108                clock_configure
  .text.clocks_init
-                0x100022a4      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x100022a4                clocks_init
+                0x10002208      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002208                clocks_init
  .text.clock_get_hz
-                0x100023a4        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x100023a4                clock_get_hz
+                0x10002308        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10002308                clock_get_hz
  .text.pll_init
-                0x100023b0      0x120 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x100023b0                pll_init
+                0x10002314      0x120 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10002314                pll_init
  .text.watchdog_start_tick
-                0x100024d0       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x100024d0                watchdog_start_tick
+                0x10002434       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10002434                watchdog_start_tick
  .text.xosc_init
-                0x100024e0       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x100024e0                xosc_init
- .text._exit    0x10002508        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002508                _exit
- .text.exit     0x1000250c        0x6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000250c                exit
- *fill*         0x10002512        0x2 
+                0x10002444       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10002444                xosc_init
+ .text._exit    0x1000246c        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000246c                _exit
+ .text.exit     0x10002470        0x6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002470                exit
+ *fill*         0x10002476        0x2 
  .text.__assert_func
-                0x10002514       0x3c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002514                __assert_func
+                0x10002478       0x3c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002478                __assert_func
  .text.runtime_init
-                0x10002550       0xf8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002550                runtime_init
- .text.panic    0x10002648       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002648                panic
+                0x100024b4       0xf8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100024b4                runtime_init
+ .text.panic    0x100025ac       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100025ac                panic
  .text._out_null
-                0x10002678        0x2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100025dc        0x2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x1000267a        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._atoi    0x10002688       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100025de        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._atoi    0x100025ec       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x100026b0       0x8c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002614       0x8c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x1000273c      0x10c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100026a0      0x10c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long
-                0x10002848       0xb0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100027ac       0xb0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long_long
-                0x100028f8       0xe6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x100029de        0x2 
- .text._etoa    0x100029e0      0x408 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002de8      0x344 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000285c       0xe6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10002942        0x2 
+ .text._etoa    0x10002944      0x408 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x10002d4c      0x344 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x1000312c      0x61c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003090      0x61c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x10003748       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10003748                vfctprintf
- .text          0x10003768       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x100036ac       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100036ac                vfctprintf
+ .text          0x100036cc       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10003778       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003778                rom_func_lookup
+                0x100036dc       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100036dc                rom_func_lookup
  .text.rom_data_lookup
-                0x10003788       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003788                rom_data_lookup
+                0x100036ec       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100036ec                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10003798       0x36 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003798                rom_funcs_lookup
- *fill*         0x100037ce        0x2 
+                0x100036fc       0x36 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100036fc                rom_funcs_lookup
+ *fill*         0x10003732        0x2 
  .text.__wrap___aeabi_idiv
-                0x100037d0       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100037d0                __wrap___aeabi_idivmod
-                0x100037d0                divmod_s32s32
-                0x100037d0                div_s32s32
-                0x100037d0                __wrap___aeabi_idiv
-                0x100037d8                divmod_s32s32_unsafe
-                0x10003804                divmod_s32s32_savestate
+                0x10003734       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003734                __wrap___aeabi_idivmod
+                0x10003734                divmod_s32s32
+                0x10003734                div_s32s32
+                0x10003734                __wrap___aeabi_idiv
+                0x1000373c                divmod_s32s32_unsafe
+                0x10003768                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x10003820       0x4c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003820                __wrap___aeabi_uidiv
-                0x10003820                __wrap___aeabi_uidivmod
-                0x10003820                div_u32u32
-                0x10003820                divmod_u32u32
-                0x10003828                divmod_u32u32_unsafe
-                0x10003850                divmod_u32u32_savestate
+                0x10003784       0x4c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003784                __wrap___aeabi_uidiv
+                0x10003784                __wrap___aeabi_uidivmod
+                0x10003784                div_u32u32
+                0x10003784                divmod_u32u32
+                0x1000378c                divmod_u32u32_unsafe
+                0x100037b4                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x1000386c      0x424 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x1000386c                div_s64s64
-                0x1000386c                divmod_s64s64
-                0x1000386c                __wrap___aeabi_ldivmod
-                0x1000389c                div_u64u64
-                0x1000389c                divmod_u64u64
-                0x1000389c                __wrap___aeabi_uldivmod
-                0x100038ac                divmod_u64u64_savestate
-                0x100038cc                divmod_s64s64_unsafe
-                0x10003954                divmod_u64u64_unsafe
+                0x100037d0      0x424 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100037d0                div_s64s64
+                0x100037d0                divmod_s64s64
+                0x100037d0                __wrap___aeabi_ldivmod
+                0x10003800                div_u64u64
+                0x10003800                divmod_u64u64
+                0x10003800                __wrap___aeabi_uldivmod
+                0x10003810                divmod_u64u64_savestate
+                0x10003830                divmod_s64s64_unsafe
+                0x100038b8                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10003c90       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003c90                __wrap___aeabi_drsub
-                0x10003c96                __wrap___aeabi_dsub
-                0x10003ca8                __wrap___aeabi_dadd
-                0x10003cba                __wrap___aeabi_ddiv
-                0x10003cf6                __wrap___aeabi_dmul
+                0x10003bf4       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003bf4                __wrap___aeabi_drsub
+                0x10003bfa                __wrap___aeabi_dsub
+                0x10003c0c                __wrap___aeabi_dadd
+                0x10003c1e                __wrap___aeabi_ddiv
+                0x10003c5a                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10003d10       0x6c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d10                __wrap___aeabi_cdrcmple
-                0x10003d20                __wrap___aeabi_cdcmple
-                0x10003d20                __wrap___aeabi_cdcmpeq
+                0x10003c74       0x6c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c74                __wrap___aeabi_cdrcmple
+                0x10003c84                __wrap___aeabi_cdcmple
+                0x10003c84                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10003d7c        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d7c                __wrap___aeabi_dcmplt
+                0x10003ce0        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ce0                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10003d88       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d88                __wrap___aeabi_dcmple
+                0x10003cec       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003cec                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10003d98       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d98                __wrap___aeabi_dcmpge
+                0x10003cfc       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003cfc                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003da8        0xa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003da8                __wrap___aeabi_dcmpgt
+                0x10003d0c        0xa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d0c                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10003db2       0x1c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003db2                __wrap___aeabi_dcmpun
- *fill*         0x10003dce        0x2 
+                0x10003d16       0x1c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d16                __wrap___aeabi_dcmpun
+ *fill*         0x10003d32        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003dd0       0x38 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003dd0                __wrap___aeabi_ui2d
-                0x10003dd8                __wrap___aeabi_i2d
+                0x10003d34       0x38 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d34                __wrap___aeabi_ui2d
+                0x10003d3c                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10003e08       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e08                __wrap___aeabi_d2iz
-                0x10003e08                double2int_z
+                0x10003d6c       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d6c                __wrap___aeabi_d2iz
+                0x10003d6c                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x10003e50       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e50                double2uint
-                0x10003e50                __wrap___aeabi_d2uiz
+                0x10003db4       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003db4                double2uint
+                0x10003db4                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x10003e68       0xc8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10003e68                __aeabi_double_init
+                0x10003dcc       0xc8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10003dcc                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10003f30       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003f30                double_table_shim_on_use_helper
+                0x10003e94       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003e94                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10003f64       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003f64                drsub_shim
-                0x10003f6a                dsub_shim
+                0x10003ec8       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003ec8                drsub_shim
+                0x10003ece                dsub_shim
  .text.dadd_shim
-                0x10003f74      0x15c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003f74                dadd_shim
+                0x10003ed8      0x15c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003ed8                dadd_shim
  .text.dmul_shim
-                0x100040d0      0x15c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100040d0                dmul_shim
+                0x10004034      0x15c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004034                dmul_shim
  .text.ddiv_shim
-                0x1000422c      0x1b0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x1000422c                ddiv_shim
+                0x10004190      0x1b0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004190                ddiv_shim
  .text.double2uint_shim
-                0x100043dc        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100043dc                double2uint_shim
-                0x100043de                double2ufix_shim
- *fill*         0x100043ea        0x2 
+                0x10004340        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004340                double2uint_shim
+                0x10004342                double2ufix_shim
+ *fill*         0x1000434e        0x2 
  .text.double2uint64_shim
-                0x100043ec       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100043ec                double2uint64_shim
-                0x100043ee                double2ufix64_shim
-                0x1000440e                d2fix_a
+                0x10004350       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004350                double2uint64_shim
+                0x10004352                double2ufix64_shim
+                0x10004372                d2fix_a
  .text.dunpacks
-                0x1000445c       0x3c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x1000445c                dunpacks
+                0x100043c0       0x3c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100043c0                dunpacks
  .text.__aeabi_lmul
-                0x10004498       0x32 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10004498                __wrap___aeabi_lmul
- *fill*         0x100044ca        0x2 
+                0x100043fc       0x32 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x100043fc                __wrap___aeabi_lmul
+ *fill*         0x1000442e        0x2 
  .text.__aeabi_float_init
-                0x100044cc       0xfc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x100044cc                __aeabi_float_init
+                0x10004430       0xfc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10004430                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x100045c8       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x100045c8                float_table_shim_on_use_helper
- .text          0x100045fc       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x100045fc                __aeabi_mem_init
- .text.memcpy   0x1000460c        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x1000460c                __wrap___aeabi_memcpy
-                0x1000460c                __wrap_memcpy
+                0x1000452c       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x1000452c                float_table_shim_on_use_helper
+ .text          0x10004560       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004560                __aeabi_mem_init
+ .text.memcpy   0x10004570        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004570                __wrap___aeabi_memcpy
+                0x10004570                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x10004618        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10004626        0x2 
+                0x1000457c        0xe CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x1000458a        0x2 
  .text.stdio_out_chars_crlf
-                0x10004628       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000458c       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_stack_buffer_flush
-                0x100046a8       0x44 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000460c       0x44 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x100046ec       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004650       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
-                0x1000470c       0x5c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000470c                stdout_serialize_begin
+                0x10004670       0x5c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004670                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x10004768       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004768                stdout_serialize_end
+                0x100046cc       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100046cc                stdout_serialize_end
  .text.stdio_put_string
-                0x10004778       0x94 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100046dc       0x94 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_set_driver_enabled
-                0x1000480c       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000480c                stdio_set_driver_enabled
+                0x10004770       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004770                stdio_set_driver_enabled
  .text.stdio_flush
-                0x10004838       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004838                stdio_flush
+                0x1000479c       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000479c                stdio_flush
  .text.__wrap_puts
-                0x10004858       0x1e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004858                __wrap_puts
- *fill*         0x10004876        0x2 
+                0x100047bc       0x1e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100047bc                __wrap_puts
+ *fill*         0x100047da        0x2 
  .text.__wrap_vprintf
-                0x10004878       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004878                __wrap_vprintf
+                0x100047dc       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100047dc                __wrap_vprintf
  .text.__wrap_printf
-                0x100048b8       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100048b8                __wrap_printf
+                0x1000481c       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000481c                __wrap_printf
  .text.stdio_init_all
-                0x100048d0        0xa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100048d0                stdio_init_all
- *fill*         0x100048da        0x2 
+                0x10004834        0xa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004834                stdio_init_all
+ *fill*         0x1000483e        0x2 
  .text.stdio_uart_out_chars
-                0x100048dc       0x74 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004840       0x74 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x10004950       0x78 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10004950                stdio_uart_in_chars
+                0x100048b4       0x78 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100048b4                stdio_uart_in_chars
  .text.on_uart_rx
-                0x100049c8       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x1000492c       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x100049f0       0x8c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004954       0x8c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init_full
-                0x10004a7c       0x44 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10004a7c                stdio_uart_init_full
+                0x100049e0       0x44 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100049e0                stdio_uart_init_full
  .text.stdio_uart_init
-                0x10004ac0       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10004ac0                stdio_uart_init
+                0x10004a24       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004a24                stdio_uart_init
  .text.adc_init
-                0x10004ae8       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-                0x10004ae8                adc_init
+                0x10004a4c       0x34 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+                0x10004a4c                adc_init
  .text.core1_trampoline
-                0x10004b1c        0x2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10004a80        0x2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .text.core1_wrapper
-                0x10004b1e        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x10004b1e                core1_wrapper
+                0x10004a82        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10004a82                core1_wrapper
  .text.multicore_fifo_push_blocking
-                0x10004b2a       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x10004b2a                multicore_fifo_push_blocking
+                0x10004a8e       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10004a8e                multicore_fifo_push_blocking
  .text.multicore_fifo_pop_blocking
-                0x10004b3e       0x16 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x10004b3e                multicore_fifo_pop_blocking
+                0x10004aa2       0x16 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10004aa2                multicore_fifo_pop_blocking
  .text.multicore_launch_core1_raw
-                0x10004b54       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x10004b54                multicore_launch_core1_raw
+                0x10004ab8       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10004ab8                multicore_launch_core1_raw
  .text.multicore_launch_core1_with_stack
-                0x10004bc4       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x10004bc4                multicore_launch_core1_with_stack
+                0x10004b28       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10004b28                multicore_launch_core1_with_stack
  .text.multicore_launch_core1
-                0x10004c14       0x24 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x10004c14                multicore_launch_core1
- .text          0x10004c38       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
-                0x10004c38                strlen
+                0x10004b78       0x24 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10004b78                multicore_launch_core1
+ .text          0x10004b9c       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+                0x10004b9c                strlen
  *(.fini)
- .fini          0x10004ca0        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
-                0x10004ca0                _fini
- *fill*         0x10004ca4        0x4 
- .fini.__stub   0x10004ca8       0x60 linker stubs
+ .fini          0x10004c04        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
+                0x10004c04                _fini
+ .fini.__stub   0x10004c08       0x60 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2031,268 +2018,268 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10004d08        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10004d08                . = ALIGN (0x4)
+ .eh_frame      0x10004c68        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10004c68                . = ALIGN (0x4)
 
-.glue_7         0x10004d08        0x0
- .glue_7        0x10004d08        0x0 linker stubs
+.glue_7         0x10004c68        0x0
+ .glue_7        0x10004c68        0x0 linker stubs
 
-.glue_7t        0x10004d08        0x0
- .glue_7t       0x10004d08        0x0 linker stubs
+.glue_7t        0x10004c68        0x0
+ .glue_7t       0x10004c68        0x0 linker stubs
 
-.vfp11_veneer   0x10004d08        0x0
- .vfp11_veneer  0x10004d08        0x0 linker stubs
+.vfp11_veneer   0x10004c68        0x0
+ .vfp11_veneer  0x10004c68        0x0 linker stubs
 
-.v4_bx          0x10004d08        0x0
- .v4_bx         0x10004d08        0x0 linker stubs
+.v4_bx          0x10004c68        0x0
+ .v4_bx         0x10004c68        0x0 linker stubs
 
-.iplt           0x10004d08        0x0
- .iplt          0x10004d08        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10004c68        0x0
+ .iplt          0x10004c68        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10004d08      0xfb8
+.rodata         0x10004c68      0xfb8
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.__func__.4859
-                0x10004d08       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004d22        0x2 
+                0x10004c68       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004c82        0x2 
  .rodata.__func__.4873
-                0x10004d24        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10004c84        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.__func__.4881
-                0x10004d30       0x17 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004d47        0x1 
+                0x10004c90       0x17 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004ca7        0x1 
  .rodata.__func__.4885
-                0x10004d48        0xf CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004d57        0x1 
+                0x10004ca8        0xf CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004cb7        0x1 
  .rodata.__func__.4924
-                0x10004d58       0x13 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004d6b        0x1 
+                0x10004cb8       0x13 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004ccb        0x1 
  .rodata.__func__.4946
-                0x10004d6c       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004d86        0x2 
+                0x10004ccc       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004ce6        0x2 
  .rodata.insert_branch_and_link.str1.4
-                0x10004d88       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10004ce8       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_add_shared_handler.str1.4
-                0x10004d98       0xd9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004e71        0x3 
+                0x10004cf8       0xd9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004dd1        0x3 
  .rodata.irq_add_tail_to_free_list.str1.4
-                0x10004e74       0x3a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004eae        0x2 
+                0x10004dd4       0x3a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004e0e        0x2 
  .rodata.irq_remove_handler.str1.4
-                0x10004eb0       0x3a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004eea        0x2 
+                0x10004e10       0x3a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004e4a        0x2 
  .rodata.irq_set_exclusive_handler.str1.4
-                0x10004eec       0x36 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004f22        0x2 
+                0x10004e4c       0x36 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004e82        0x2 
  .rodata.make_branch.str1.4
-                0x10004f24       0x69 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004f8d        0x3 
+                0x10004e84       0x69 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004eed        0x3 
  .rodata.__func__.4774
-                0x10004f90       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10004ef0       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .rodata.__func__.4793
-                0x10004fa8        0xb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10004fb3        0x1 
+                0x10004f08        0xb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x10004f13        0x1 
  .rodata.str1.4
-                0x10004fb4       0xe5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10005099        0x3 
+                0x10004f14       0xe5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x10004ff9        0x3 
  .rodata.__func__.5751
-                0x1000509c       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100050b1        0x3 
+                0x10004ffc       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005011        0x3 
  .rodata.__func__.6095
-                0x100050b4        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005014        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.6102
-                0x100050c0       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100050d2        0x2 
+                0x10005020       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005032        0x2 
  .rodata.__func__.6118
-                0x100050d4        0xf CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100050e3        0x1 
+                0x10005034        0xf CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005043        0x1 
  .rodata.__func__.6140
-                0x100050e4        0xd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100050f1        0x3 
+                0x10005044        0xd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005051        0x3 
  .rodata.__func__.6369
-                0x100050f4        0xa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100050fe        0x2 
+                0x10005054        0xa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000505e        0x2 
  .rodata.__func__.6374
-                0x10005100       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005112        0x2 
+                0x10005060       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005072        0x2 
  .rodata.__func__.6389
-                0x10005114       0x17 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000512b        0x1 
+                0x10005074       0x17 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000508b        0x1 
  .rodata.__func__.6400
-                0x1000512c       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005141        0x3 
+                0x1000508c       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x100050a1        0x3 
  .rodata.__func__.6417
-                0x10005144       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000515e        0x2 
+                0x100050a4       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x100050be        0x2 
  .rodata.__func__.6470
-                0x10005160       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100050c0       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.add_alarm_under_lock.str1.4
-                0x10005178       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100050d8       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
                                  0x2b (size before relaxing)
  .rodata.alarm_pool_alarm_callback.str1.4
-                0x100051a0       0x98 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10005100       0x98 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
                                  0xf8 (size before relaxing)
  .rodata.alarm_pool_cancel_alarm.str1.4
-                0x10005238       0x27 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000525f        0x1 
+                0x10005198       0x27 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x100051bf        0x1 
  .rodata.alarm_pool_get_default.str1.4
-                0x10005260       0x21 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005281        0x3 
+                0x100051c0       0x21 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x100051e1        0x3 
  .rodata.ph_add_child_node.str1.4
-                0x10005284       0x92 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10005316        0x2 
+                0x100051e4       0x92 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005276        0x2 
  .rodata.repeating_timer_callback.str1.4
-                0x10005318       0x47 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x1000535f        0x1 
+                0x10005278       0x47 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x100052bf        0x1 
  .rodata.sleep_until.str1.4
-                0x10005360       0x4d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100053ad        0x3 
+                0x100052c0       0x4d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000530d        0x3 
  .rodata.timer_pool_entry_comparator.str1.4
-                0x100053b0       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100053d2        0x2 
+                0x10005310       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10005332        0x2 
  .rodata.__func__.4243
-                0x100053d4       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x100053e9        0x3 
+                0x10005334       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10005349        0x3 
  .rodata.__func__.4640
-                0x100053ec       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000534c       0x1a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.busy_wait_us.str1.4
-                0x10005406       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10005406        0x2 
+                0x10005366       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10005366        0x2 
  .rodata.hardware_alarm_claim.str1.4
-                0x10005408       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x1000542a        0x2 
+                0x10005368       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x1000538a        0x2 
  .rodata.hardware_alarm_set_target.str1.4
-                0x1000542c       0x61 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x1000548d        0x3 
+                0x1000538c       0x61 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x100053ed        0x3 
  .rodata.__func__.5776
-                0x10005490        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100053f0        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.__func__.5783
-                0x1000549c       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x100054ae        0x2 
+                0x100053fc       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x1000540e        0x2 
  .rodata.__func__.5869
-                0x100054b0       0x13 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x100054c3        0x1 
+                0x10005410       0x13 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10005423        0x1 
  .rodata.__func__.5887
-                0x100054c4       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10005424       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x100054dc       0x92 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000543c       0x92 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.ph_remove_and_free_node.str1.4
-                0x100054dc       0x1e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000543c       0x1e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
                                  0x26 (size before relaxing)
- *fill*         0x100054fa        0x2 
+ *fill*         0x1000545a        0x2 
  .rodata.ph_remove_any_head.str1.4
-                0x100054fc       0x88 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000545c       0x88 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
                                  0x9c (size before relaxing)
  .rodata.__func__.4826
-                0x10005584       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100054e4       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.clock_configure.str1.4
-                0x10005594       0x53 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- *fill*         0x100055e7        0x1 
+                0x100054f4       0x53 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ *fill*         0x10005547        0x1 
  .rodata.__func__.4483
-                0x100055e8        0x9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x100055f1        0x3 
+                0x10005548        0x9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x10005551        0x3 
  .rodata.pll_init.str1.4
-                0x100055f4      0x120 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10005554      0x120 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .rodata.__assert_func.str1.4
-                0x10005714       0x3f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10005674       0x3f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                  0x43 (size before relaxing)
- *fill*         0x10005753        0x1 
+ *fill*         0x100056b3        0x1 
  .rodata.__func__.6437
-                0x10005754        0xd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10005761        0x3 
+                0x100056b4        0xd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x100056c1        0x3 
  .rodata.panic.str1.4
-                0x10005764       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10005776        0x2 
+                0x100056c4       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x100056d6        0x2 
  .rodata.runtime_init.str1.4
-                0x10005778       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x100057d5        0x3 
+                0x100056d8       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10005735        0x3 
  .rodata._vsnprintf
-                0x100057d8      0x1e0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10005738      0x1e0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata._ftoa.str1.4
-                0x100059b8       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x100059cd        0x3 
+                0x10005918       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x1000592d        0x3 
  .rodata.pow10.5481
-                0x100059d0       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10005930       0x50 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.__aeabi_double_init.str1.4
-                0x10005a20       0x98 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10005980       0x98 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__func__.4787
-                0x10005ab8       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10005a18       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__aeabi_float_init.str1.4
-                0x10005acc       0x76 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10005a2c       0x76 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                  0x7a (size before relaxing)
- *fill*         0x10005b42        0x2 
+ *fill*         0x10005aa2        0x2 
  .rodata.__func__.4788
-                0x10005b44       0x13 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- *fill*         0x10005b57        0x1 
+                0x10005aa4       0x13 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ *fill*         0x10005ab7        0x1 
  .rodata.__bi_44
-                0x10005b58        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005ab8        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10005b64        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005ac4        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x10005b70        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005ad0        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.str1.4
-                0x10005b7c       0x4c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005adc       0x4c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__func__.5613
-                0x10005bc8       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10005bdd        0x3 
+                0x10005b28       0x15 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10005b3d        0x3 
  .rodata.crlf_str.6280
-                0x10005be0        0x2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005b40        0x2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.stdout_serialize_begin.str1.4
-                0x10005be2       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10005be2        0x2 
+                0x10005b42       0x5d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10005b42        0x2 
  .rodata.__bi_33.4929
-                0x10005be4        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005b44        0xc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.4933
-                0x10005bf0        0x8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005b50        0x8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.str1.4
-                0x10005bf8       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005b58       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__func__.4996
-                0x10005c24       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- *fill*         0x10005c46        0x2 
+                0x10005b84       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ *fill*         0x10005ba6        0x2 
  .rodata.multicore_launch_core1_with_stack.str1.4
-                0x10005c48       0x19 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- *fill*         0x10005c61        0x3 
+                0x10005ba8       0x19 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ *fill*         0x10005bc1        0x3 
  .rodata.multicore_lockout_start_block_until.str1.4
-                0x10005c64       0x59 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-                0x10005cc0                . = ALIGN (0x4)
- *fill*         0x10005cbd        0x3 
+                0x10005bc4       0x59 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+                0x10005c20                . = ALIGN (0x4)
+ *fill*         0x10005c1d        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10005cc0                . = ALIGN (0x4)
+                0x10005c20                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10005cc0                __exidx_start = .
+                0x10005c20                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10005cc0                __exidx_end = .
-                0x10005cc0                . = ALIGN (0x4)
-                0x10005cc0                __binary_info_start = .
+                0x10005c20                __exidx_end = .
+                0x10005c20                . = ALIGN (0x4)
+                0x10005c20                __binary_info_start = .
 
-.binary_info    0x10005cc0       0x24
+.binary_info    0x10005c20       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x10005cc0        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005c20        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x10005cc4        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005c24        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x10005cc8        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005c28        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x10005ccc        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005c2c        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x10005cd0        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005c30        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x10005cd4        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005c34        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x10005cd8        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005c38        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x10005cdc        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005c3c        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x10005ce0        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10005ce4                __binary_info_end = .
+                0x10005c40        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005c44                __binary_info_end = .
 
-.rel.dyn        0x10005ce4        0x0
- .rel.iplt      0x10005ce4        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10005ce4                . = ALIGN (0x4)
+.rel.dyn        0x10005c44        0x0
+ .rel.iplt      0x10005c44        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x10005c44                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2301,7 +2288,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x20000000       0xc0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x33c load address 0x10005ce4
+.data           0x200000c0      0x33c load address 0x10005c44
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2391,38 +2378,38 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.jcr)
                 0x200003fc                . = ALIGN (0x4)
                 0x200003fc                __data_end__ = .
-                0x10005ce4                __etext = LOADADDR (.data)
+                0x10005c44                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x200003fc        0x0 load address 0x10006020
+                0x200003fc        0x0 load address 0x10005f80
  .tm_clone_table
                 0x200003fc        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x200003fc        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x200003fc        0x0 load address 0x10006020
+.igot.plt       0x200003fc        0x0 load address 0x10005f80
  .igot.plt      0x200003fc        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x200003fc        0x0 load address 0x10006020
+                0x200003fc        0x0 load address 0x10005f80
                 0x200003fc                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x10006020
+.scratch_x      0x20040000        0x0 load address 0x10005f80
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x10006020                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10005f80                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10006020
+.scratch_y      0x20041000        0x0 load address 0x10005f80
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x10006020                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10005f80                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x20000400      0x470
+.bss            0x20000400      0x420
                 0x20000400                . = ALIGN (0x4)
                 0x20000400                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2471,47 +2458,35 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  .bss.timer_callbacks_pending
                 0x200005ea        0x1 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
- *fill*         0x200005eb        0x1 
- COMMON         0x200005ec       0x7e CMakeFiles/pico-tail-controller.dir/main.c.obj
-                0x200005ec                cmid
-                0x200005f0                scmdel
-                0x200005fe                delta1
-                0x20000600                cmaxi
-                0x20000602                temadcinr0
-                0x20000604                sresult
-                0x20000608                in_buf0
-                0x2000060c                cmdel
-                0x20000610                msdel
-                0x20000612                adcinr0
-                0x20000614                ddid
-                0x20000616                in_ok
-                0x20000618                sin_buf0
-                0x2000061a                adcinr1
-                0x2000061c                chin_buf0
-                0x20000620                delta0
-                0x20000624                fresult
-                0x20000628                cmdir
-                0x2000062a                temadcinr1
-                0x2000062c                uin
-                0x20000630                suin
-                0x20000634                int_str
-                0x20000668                in_bufid
- *fill*         0x2000066a        0x2 
- COMMON         0x2000066c        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x2000066c                uart_char_to_line_feed
- COMMON         0x20000670      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x20000670                sd_table
- COMMON         0x20000770      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x20000770                sf_table
-                0x20000870                . = ALIGN (0x4)
-                0x20000870                __bss_end__ = .
+ *fill*         0x200005eb        0x5 
+ COMMON         0x200005f0       0x2a CMakeFiles/pico-tail-controller.dir/main.c.obj
+                0x200005f0                cmaxi
+                0x200005f2                temadcinr0
+                0x200005f4                in_buf0
+                0x20000600                msdel
+                0x20000608                adcinr0
+                0x2000060c                ddid
+                0x2000060e                in_ok
+                0x20000610                adcinr1
+                0x20000612                cmdir
+                0x20000614                temadcinr1
+                0x20000618                in_bufid
+ *fill*         0x2000061a        0x2 
+ COMMON         0x2000061c        0x4 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x2000061c                uart_char_to_line_feed
+ COMMON         0x20000620      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x20000620                sd_table
+ COMMON         0x20000720      0x100 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x20000720                sf_table
+                0x20000820                . = ALIGN (0x4)
+                0x20000820                __bss_end__ = .
 
-.heap           0x20000870      0x800
-                0x20000870                __end__ = .
-                0x20000870                end = __end__
+.heap           0x20000820      0x800
+                0x20000820                __end__ = .
+                0x20000820                end = __end__
  *(.heap*)
- .heap          0x20000870      0x800 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x20001070                __HeapLimit = .
+ .heap          0x20000820      0x800 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x20001020                __HeapLimit = .
 
 .stack1_dummy   0x20040000      0x800
  *(.stack1*)
@@ -2521,8 +2496,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x10006020        0x0
-                0x10006020                PROVIDE (__flash_binary_end = .)
+.flash_end      0x10005f80        0x0
+                0x10005f80                PROVIDE (__flash_binary_end = .)
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2580,7 +2555,7 @@ LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pi
 LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-LOAD /tmp/cccqIuKB.o
+LOAD /tmp/ccX7IOsn.o
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2679,7 +2654,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000061c       0x2c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .ARM.attributes
-                0x00000648       0x22 /tmp/cccqIuKB.o
+                0x00000648       0x22 /tmp/ccX7IOsn.o
  .ARM.attributes
                 0x0000066a       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
  .ARM.attributes
@@ -2730,125 +2705,125 @@ LOAD linker stubs
  .comment       0x0000009f       0x4f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
  .comment       0x0000009f       0x52 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.debug_info     0x00000000    0x21d40
- .debug_info    0x00000000     0x32d6 CMakeFiles/pico-tail-controller.dir/main.c.obj
- .debug_info    0x000032d6     0x1860 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x00004b36      0x1cb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x00004d01      0x6aa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x000053ab      0x591 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x0000593c     0x1cfa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x00007636       0x26 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
- .debug_info    0x0000765c      0x1ed CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x00007849     0x20e8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x00009931     0x493f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x0000e270     0x13ac CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0000f61c     0x1ada CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x000110f6      0xd92 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_info    0x00011e88      0xf45 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x00012dcd      0x4e8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x000132b5      0xd7d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x00014032      0x1b8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x000141ea     0x1929 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x00015b13     0x2032 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x00017b45       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x00017b67      0x262 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x00017dc9       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x00017deb       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x00017e0d      0xb2a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x00018937       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x00018959       0x26 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x0001897f       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x000189a1      0xb44 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x000194e5       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x00019507      0xd74 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_info    0x0001a27b       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x0001a29d       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x0001a2bf      0x2cb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x0001a58a     0x20dc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x0001c666     0x1025 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_info    0x0001d68b      0x2b6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .debug_info    0x0001d941     0x1cf1 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_info    0x0001f632      0x9b6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
- .debug_info    0x0001ffe8      0x9b6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
- .debug_info    0x0002099e      0xa09 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
- .debug_info    0x000213a7       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x000213cd      0x973 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+.debug_info     0x00000000    0x21a25
+ .debug_info    0x00000000     0x2fbb CMakeFiles/pico-tail-controller.dir/main.c.obj
+ .debug_info    0x00002fbb     0x1860 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x0000481b      0x1cb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x000049e6      0x6aa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x00005090      0x591 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00005621     0x1cfa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x0000731b       0x26 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+ .debug_info    0x00007341      0x1ed CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0000752e     0x20e8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x00009616     0x493f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x0000df55     0x13ac CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0000f301     0x1ada CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x00010ddb      0xd92 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_info    0x00011b6d      0xf45 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x00012ab2      0x4e8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x00012f9a      0xd7d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x00013d17      0x1b8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x00013ecf     0x1929 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x000157f8     0x2032 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x0001782a       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x0001784c      0x262 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x00017aae       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x00017ad0       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x00017af2      0xb2a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x0001861c       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x0001863e       0x26 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x00018664       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x00018686      0xb44 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x000191ca       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x000191ec      0xd74 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_info    0x00019f60       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x00019f82       0x22 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x00019fa4      0x2cb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x0001a26f     0x20dc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x0001c34b     0x1025 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_info    0x0001d370      0x2b6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_info    0x0001d626     0x1cf1 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_info    0x0001f317      0x9b6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
+ .debug_info    0x0001fccd      0x9b6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
+ .debug_info    0x00020683      0xa09 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
+ .debug_info    0x0002108c       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000210b2      0x973 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
-.debug_abbrev   0x00000000     0x6108
- .debug_abbrev  0x00000000      0x508 CMakeFiles/pico-tail-controller.dir/main.c.obj
- .debug_abbrev  0x00000508      0x382 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x0000088a       0xeb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x00000975      0x2fb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000c70      0x224 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x00000e94      0x4ff CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x00001393       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
- .debug_abbrev  0x000013a7      0x141 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x000014e8      0x3b3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x0000189b      0x65e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x00001ef9      0x3c7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x000022c0      0x3ad CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x0000266d      0x336 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_abbrev  0x000029a3      0x3ea CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00002d8d      0x1ee CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x00002f7b      0x2d8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00003253      0x106 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00003359      0x5dc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x00003935      0x4aa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x00003ddf       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x00003df1      0x144 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x00003f35       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x00003f47       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x00003f59      0x2c2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x0000421b       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x0000422d       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_abbrev  0x00004241       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x00004253      0x2d5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x00004528       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x0000453a      0x306 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_abbrev  0x00004840       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00004852       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x00004864       0xad CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x00004911      0x581 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x00004e92      0x411 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_abbrev  0x000052a3      0x11a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .debug_abbrev  0x000053bd      0x4b9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_abbrev  0x00005876      0x232 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
- .debug_abbrev  0x00005aa8      0x232 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
- .debug_abbrev  0x00005cda      0x232 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
- .debug_abbrev  0x00005f0c       0x14 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x00005f20      0x1e8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+.debug_abbrev   0x00000000     0x60ab
+ .debug_abbrev  0x00000000      0x4ab CMakeFiles/pico-tail-controller.dir/main.c.obj
+ .debug_abbrev  0x000004ab      0x382 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x0000082d       0xeb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x00000918      0x2fb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000c13      0x224 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x00000e37      0x4ff CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x00001336       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+ .debug_abbrev  0x0000134a      0x141 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x0000148b      0x3b3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x0000183e      0x65e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x00001e9c      0x3c7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x00002263      0x3ad CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x00002610      0x336 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_abbrev  0x00002946      0x3ea CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x00002d30      0x1ee CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00002f1e      0x2d8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x000031f6      0x106 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x000032fc      0x5dc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x000038d8      0x4aa CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x00003d82       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x00003d94      0x144 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x00003ed8       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x00003eea       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x00003efc      0x2c2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x000041be       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x000041d0       0x14 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_abbrev  0x000041e4       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x000041f6      0x2d5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x000044cb       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x000044dd      0x306 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_abbrev  0x000047e3       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x000047f5       0x12 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x00004807       0xad CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x000048b4      0x581 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x00004e35      0x411 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_abbrev  0x00005246      0x11a CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_abbrev  0x00005360      0x4b9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_abbrev  0x00005819      0x232 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
+ .debug_abbrev  0x00005a4b      0x232 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
+ .debug_abbrev  0x00005c7d      0x232 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
+ .debug_abbrev  0x00005eaf       0x14 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00005ec3      0x1e8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
-.debug_loc      0x00000000    0x113ce
- .debug_loc     0x00000000     0x1541 CMakeFiles/pico-tail-controller.dir/main.c.obj
- .debug_loc     0x00001541     0x122e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_loc     0x0000276f       0xe9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_loc     0x00002858      0x43d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_loc     0x00002c95      0x233 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_loc     0x00002ec8     0x1463 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_loc     0x0000432b       0x60 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_loc     0x0000438b     0x159f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_loc     0x0000592a     0x3281 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_loc     0x00008bab      0xa7c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_loc     0x00009627     0x14bf CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_loc     0x0000aae6      0x828 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_loc     0x0000b30e      0x7af CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_loc     0x0000babd      0x31d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_loc     0x0000bdda      0x2a0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_loc     0x0000c07a       0x3d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_loc     0x0000c0b7      0x5f2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_loc     0x0000c6a9     0x1fee CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_loc     0x0000e697      0x1a1 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_loc     0x0000e838       0x59 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_loc     0x0000e891       0x73 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_loc     0x0000e904      0x2dc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_loc     0x0000ebe0      0xde6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_loc     0x0000f9c6      0x84d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_loc     0x00010213       0x5c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .debug_loc     0x0001026f      0xf51 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_loc     0x000111c0       0x58 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
- .debug_loc     0x00011218       0x58 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
- .debug_loc     0x00011270       0xbb /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
- .debug_loc     0x0001132b       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+.debug_loc      0x00000000    0x112a4
+ .debug_loc     0x00000000     0x1417 CMakeFiles/pico-tail-controller.dir/main.c.obj
+ .debug_loc     0x00001417     0x122e CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_loc     0x00002645       0xe9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_loc     0x0000272e      0x43d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_loc     0x00002b6b      0x233 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_loc     0x00002d9e     0x1463 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_loc     0x00004201       0x60 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_loc     0x00004261     0x159f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_loc     0x00005800     0x3281 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_loc     0x00008a81      0xa7c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_loc     0x000094fd     0x14bf CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_loc     0x0000a9bc      0x828 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_loc     0x0000b1e4      0x7af CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_loc     0x0000b993      0x31d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_loc     0x0000bcb0      0x2a0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_loc     0x0000bf50       0x3d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_loc     0x0000bf8d      0x5f2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_loc     0x0000c57f     0x1fee CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_loc     0x0000e56d      0x1a1 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_loc     0x0000e70e       0x59 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_loc     0x0000e767       0x73 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_loc     0x0000e7da      0x2dc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_loc     0x0000eab6      0xde6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_loc     0x0000f89c      0x84d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_loc     0x000100e9       0x5c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_loc     0x00010145      0xf51 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_loc     0x00011096       0x58 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
+ .debug_loc     0x000110ee       0x58 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
+ .debug_loc     0x00011146       0xbb /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
+ .debug_loc     0x00011201       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
 .debug_aranges  0x00000000     0x1068
  .debug_aranges
@@ -2936,170 +2911,170 @@ LOAD linker stubs
  .debug_aranges
                 0x00001048       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
-.debug_ranges   0x00000000     0x39e0
- .debug_ranges  0x00000000      0x208 CMakeFiles/pico-tail-controller.dir/main.c.obj
- .debug_ranges  0x00000208      0x150 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_ranges  0x00000358       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_ranges  0x00000370       0xd8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_ranges  0x00000448       0xf0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_ranges  0x00000538      0x400 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_ranges  0x00000938       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_ranges  0x00000948      0xad0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_ranges  0x00001418      0xcb0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_ranges  0x000020c8      0x408 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_ranges  0x000024d0      0x230 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_ranges  0x00002700      0x130 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_ranges  0x00002830       0x60 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_ranges  0x00002890       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_ranges  0x000028c0       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_ranges  0x00002908       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_ranges  0x00002928      0x168 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_ranges  0x00002a90      0x120 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_ranges  0x00002bb0       0x60 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_ranges  0x00002c10       0x38 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_ranges  0x00002c48       0x38 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_ranges  0x00002c80      0x138 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_ranges  0x00002db8       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_ranges  0x00002de8       0xc0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_ranges  0x00002ea8      0x128 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_ranges  0x00002fd0       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_ranges  0x00002ff8       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_ranges  0x00003040       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_ranges  0x000030b0       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_ranges  0x000030e0       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_ranges  0x00003100      0x258 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_ranges  0x00003358      0x320 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_ranges  0x00003678       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .debug_ranges  0x000036a0      0x340 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.debug_ranges   0x00000000     0x3990
+ .debug_ranges  0x00000000      0x1b8 CMakeFiles/pico-tail-controller.dir/main.c.obj
+ .debug_ranges  0x000001b8      0x150 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_ranges  0x00000308       0x18 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_ranges  0x00000320       0xd8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_ranges  0x000003f8       0xf0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_ranges  0x000004e8      0x400 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_ranges  0x000008e8       0x10 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_ranges  0x000008f8      0xad0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_ranges  0x000013c8      0xcb0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_ranges  0x00002078      0x408 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_ranges  0x00002480      0x230 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_ranges  0x000026b0      0x130 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_ranges  0x000027e0       0x60 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_ranges  0x00002840       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_ranges  0x00002870       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_ranges  0x000028b8       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_ranges  0x000028d8      0x168 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_ranges  0x00002a40      0x120 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_ranges  0x00002b60       0x60 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_ranges  0x00002bc0       0x38 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_ranges  0x00002bf8       0x38 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_ranges  0x00002c30      0x138 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_ranges  0x00002d68       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_ranges  0x00002d98       0xc0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_ranges  0x00002e58      0x128 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_ranges  0x00002f80       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_ranges  0x00002fa8       0x48 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_ranges  0x00002ff0       0x70 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_ranges  0x00003060       0x30 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_ranges  0x00003090       0x20 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_ranges  0x000030b0      0x258 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_ranges  0x00003308      0x320 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_ranges  0x00003628       0x28 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_ranges  0x00003650      0x340 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
-.debug_line     0x00000000     0xfcad
- .debug_line    0x00000000     0x10ac CMakeFiles/pico-tail-controller.dir/main.c.obj
- .debug_line    0x000010ac      0xbd8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00001c84      0x1d5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x00001e59      0x3ae CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00002207      0x39d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x000025a4      0xf8d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00003531       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
- .debug_line    0x000035b1      0x1db CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x0000378c      0xfdd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00004769     0x1af7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00006260      0xb25 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x00006d85      0x860 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x000075e5      0x81c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_line    0x00007e01      0x8c3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x000086c4      0x470 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00008b34      0x3f1 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x00008f25      0x213 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x00009138      0x9d6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00009b0e     0x10d5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000abe3      0x143 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000ad26      0x1a3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000aec9      0x2cc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000b195      0x421 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000b5b6      0x2d8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000b88e      0x699 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000bf27       0x93 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000bfba      0x3d7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000c391      0x2c0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000c651      0x1c3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000c814      0x364 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_line    0x0000cb78       0xbd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000cc35       0xcb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000cd00      0x13b CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000ce3b      0xd4d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0000db88      0x978 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_line    0x0000e500      0x262 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .debug_line    0x0000e762      0xe31 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .debug_line    0x0000f593      0x16f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
- .debug_line    0x0000f702      0x16f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
- .debug_line    0x0000f871      0x21a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
- .debug_line    0x0000fa8b       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000faeb      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+.debug_line     0x00000000     0xfb68
+ .debug_line    0x00000000      0xf67 CMakeFiles/pico-tail-controller.dir/main.c.obj
+ .debug_line    0x00000f67      0xbd8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00001b3f      0x1d5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x00001d14      0x3ae CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x000020c2      0x39d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x0000245f      0xf8d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000033ec       0x80 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+ .debug_line    0x0000346c      0x1db CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00003647      0xfdd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x00004624     0x1af7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x0000611b      0xb25 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x00006c40      0x860 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x000074a0      0x81c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_line    0x00007cbc      0x8c3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x0000857f      0x470 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x000089ef      0x3f1 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00008de0      0x213 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00008ff3      0x9d6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x000099c9     0x10d5 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000aa9e      0x143 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000abe1      0x1a3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000ad84      0x2cc CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b050      0x421 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000b471      0x2d8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000b749      0x699 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000bde2       0x93 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000be75      0x3d7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000c24c      0x2c0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000c50c      0x1c3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000c6cf      0x364 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_line    0x0000ca33       0xbd CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000caf0       0xcb CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000cbbb      0x13b CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000ccf6      0xd4d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000da43      0x978 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_line    0x0000e3bb      0x262 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_line    0x0000e61d      0xe31 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_line    0x0000f44e      0x16f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
+ .debug_line    0x0000f5bd      0x16f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
+ .debug_line    0x0000f72c      0x21a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
+ .debug_line    0x0000f946       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000f9a6      0x1c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
 
-.debug_str      0x00000000     0x45f6
- .debug_str     0x00000000      0xbeb CMakeFiles/pico-tail-controller.dir/main.c.obj
-                                0xd40 (size before relaxing)
- .debug_str     0x00000beb      0x4b6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+.debug_str      0x00000000     0x45b4
+ .debug_str     0x00000000      0xb6a CMakeFiles/pico-tail-controller.dir/main.c.obj
+                                0xca5 (size before relaxing)
+ .debug_str     0x00000b6a      0x4b6 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
                                 0xa02 (size before relaxing)
- .debug_str     0x000010a1       0x7d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x00001020       0x7d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
                                 0x235 (size before relaxing)
- .debug_str     0x0000111e      0x1b3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x0000109d      0x1b3 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
                                 0x379 (size before relaxing)
- .debug_str     0x000012d1       0xe8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x00001250       0xe8 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
                                 0x360 (size before relaxing)
- .debug_str     0x000013b9      0x3b7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x00001338      0x3b7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
                                 0x7ef (size before relaxing)
- .debug_str     0x00001770       0x53 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+ .debug_str     0x000016ef       0x53 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
                                  0x7f (size before relaxing)
- .debug_str     0x000017c3       0x58 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x00001742       0x58 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
                                 0x26c (size before relaxing)
- .debug_str     0x0000181b      0x212 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x0000179a      0x212 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
                                 0x5f9 (size before relaxing)
- .debug_str     0x00001a2d      0x6c9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x000019ac      0x6c9 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
                                0x1027 (size before relaxing)
- .debug_str     0x000020f6      0x147 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x00002075      0x147 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
                                 0x704 (size before relaxing)
- .debug_str     0x0000223d       0xe2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_str     0x000021bc       0xe2 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
                                 0x7fd (size before relaxing)
- .debug_str     0x0000231f      0x2d7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_str     0x0000229e      0x303 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
                                 0x615 (size before relaxing)
- .debug_str     0x000025f6      0x28d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x000025a1      0x28d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
                                 0x699 (size before relaxing)
- .debug_str     0x00002883       0x83 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x0000282e       0x83 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
                                 0x2e1 (size before relaxing)
- .debug_str     0x00002906      0x11b CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x000028b1      0x11b CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
                                 0x72b (size before relaxing)
- .debug_str     0x00002a21       0x67 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x000029cc       0x67 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
                                 0x232 (size before relaxing)
- .debug_str     0x00002a88      0x309 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x00002a33      0x309 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                 0xc2f (size before relaxing)
- .debug_str     0x00002d91      0x187 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x00002d3c      0x187 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
                                 0x772 (size before relaxing)
- .debug_str     0x00002f18       0x43 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x00002ec3       0x43 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                                  0x7b (size before relaxing)
- .debug_str     0x00002f5b       0xc0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x00002f06       0xc0 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
                                 0x262 (size before relaxing)
- .debug_str     0x0000301b       0x3d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_str     0x00002fc6       0x3d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
                                  0x75 (size before relaxing)
- .debug_str     0x00003058       0x41 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_str     0x00003003       0x41 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
                                  0x79 (size before relaxing)
- .debug_str     0x00003099       0x99 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x00003044       0x99 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
                                 0x676 (size before relaxing)
- .debug_str     0x00003132       0x47 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_str     0x000030dd       0x47 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
                                  0x7f (size before relaxing)
- .debug_str     0x00003179       0x4c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_str     0x00003124       0x4c CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
                                  0x84 (size before relaxing)
- .debug_str     0x000031c5       0x3f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_str     0x00003170       0x3f CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
                                  0x77 (size before relaxing)
- .debug_str     0x00003204       0x7d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x000031af       0x7d CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                 0x692 (size before relaxing)
- .debug_str     0x00003281       0x45 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_str     0x0000322c       0x45 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
                                  0x7d (size before relaxing)
- .debug_str     0x000032c6       0xc7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_str     0x00003271       0xc7 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
                                 0x715 (size before relaxing)
- .debug_str     0x0000338d       0x43 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x00003338       0x43 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
                                  0x7b (size before relaxing)
- .debug_str     0x000033d0       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_str     0x0000337b       0x40 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
                                  0x78 (size before relaxing)
- .debug_str     0x00003410      0x235 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x000033bb      0x235 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
                                 0x3e1 (size before relaxing)
- .debug_str     0x00003645      0x49b CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x000035f0      0x49b CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
                                 0xdd7 (size before relaxing)
- .debug_str     0x00003ae0      0x315 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_str     0x00003a8b      0x328 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
                                 0x8d9 (size before relaxing)
- .debug_str     0x00003df5       0x39 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+ .debug_str     0x00003db3       0x39 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
                                 0x27e (size before relaxing)
- .debug_str     0x00003e2e      0x431 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+ .debug_str     0x00003dec      0x431 CMakeFiles/pico-tail-controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
                                 0xae1 (size before relaxing)
- .debug_str     0x0000425f      0x136 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
+ .debug_str     0x0000421d      0x136 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmax.o)
                                 0x5fa (size before relaxing)
- .debug_str     0x00004395       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
+ .debug_str     0x00004353       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fmin.o)
                                 0x5fa (size before relaxing)
- .debug_str     0x000043c9       0x5c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
+ .debug_str     0x00004387       0x5c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a(lib_a-s_fpclassify.o)
                                 0x62e (size before relaxing)
- .debug_str     0x00004425       0x97 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x000043e3       0x97 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
                                  0xa3 (size before relaxing)
- .debug_str     0x000044bc      0x13a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
+ .debug_str     0x0000447a      0x13a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(lib_a-strlen-stub.o)
                                 0x5c2 (size before relaxing)
 
 .debug_frame    0x00000000     0x1c70
