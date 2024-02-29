@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/project/pico-tail-controller
+CMAKE_SOURCE_DIR = /home/pi/project/pico-FOREHEAD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/project/pico-tail-controller/build
+CMAKE_BINARY_DIR = /home/pi/project/pico-FOREHEAD/build
 
 # Utility rule file for bs2_default_bin.
 
@@ -76,8 +76,8 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin: pico-sdk/src/rp2
 
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/project/pico-tail-controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
-	cd /home/pi/project/pico-tail-controller/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/pi/project/pico-tail-controller/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /home/pi/project/pico-tail-controller/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/project/pico-FOREHEAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default.bin"
+	cd /home/pi/project/pico-FOREHEAD/build/pico-sdk/src/rp2_common/boot_stage2 && /usr/bin/arm-none-eabi-objcopy -Obinary /home/pi/project/pico-FOREHEAD/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /home/pi/project/pico-FOREHEAD/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin
 bs2_default_bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -91,10 +91,10 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build: bs2_de
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
-	cd /home/pi/project/pico-tail-controller/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
+	cd /home/pi/project/pico-FOREHEAD/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_bin.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	cd /home/pi/project/pico-tail-controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/project/pico-tail-controller /home/pi/pico/pico-sdk/src/rp2_common/boot_stage2 /home/pi/project/pico-tail-controller/build /home/pi/project/pico-tail-controller/build/pico-sdk/src/rp2_common/boot_stage2 /home/pi/project/pico-tail-controller/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/project/pico-FOREHEAD/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/project/pico-FOREHEAD /home/pi/pico/pico-sdk/src/rp2_common/boot_stage2 /home/pi/project/pico-FOREHEAD/build /home/pi/project/pico-FOREHEAD/build/pico-sdk/src/rp2_common/boot_stage2 /home/pi/project/pico-FOREHEAD/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 
