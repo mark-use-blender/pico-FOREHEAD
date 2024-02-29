@@ -13,3 +13,7 @@ openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program pico-F
 #include "hardware/pwm.h"
 #include "hardware/uart.h"
 
+void main()
+{
+    
+}

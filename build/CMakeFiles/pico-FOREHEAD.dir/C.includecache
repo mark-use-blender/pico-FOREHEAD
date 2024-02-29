@@ -290,7 +290,7 @@ pico/stdio.h
 hardware/uart.h
 /home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/hardware/uart.h
 
-/home/pi/project/pico-tail-controller/main.c
+/home/pi/project/pico-FOREHEAD/main.c
 math.h
 -
 stdio.h
@@ -300,19 +300,19 @@ stdlib.h
 string.h
 -
 pico/stdlib.h
-/home/pi/project/pico-tail-controller/pico/stdlib.h
+/home/pi/project/pico-FOREHEAD/pico/stdlib.h
 pico/binary_info.h
-/home/pi/project/pico-tail-controller/pico/binary_info.h
+/home/pi/project/pico-FOREHEAD/pico/binary_info.h
 pico/multicore.h
-/home/pi/project/pico-tail-controller/pico/multicore.h
+/home/pi/project/pico-FOREHEAD/pico/multicore.h
 hardware/gpio.h
-/home/pi/project/pico-tail-controller/hardware/gpio.h
+/home/pi/project/pico-FOREHEAD/hardware/gpio.h
 hardware/adc.h
-/home/pi/project/pico-tail-controller/hardware/adc.h
+/home/pi/project/pico-FOREHEAD/hardware/adc.h
 hardware/pwm.h
-/home/pi/project/pico-tail-controller/hardware/pwm.h
+/home/pi/project/pico-FOREHEAD/hardware/pwm.h
 hardware/uart.h
-/home/pi/project/pico-tail-controller/hardware/uart.h
+/home/pi/project/pico-FOREHEAD/hardware/uart.h
 
 generated/pico_base/pico/config_autogen.h
 /home/pi/pico/pico-sdk/src/boards/include/boards/pico.h
